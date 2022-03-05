@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar {
+    display: flex;
+    background-color: rgb(43, 43, 43);
+    flex: 100%;
+}
+
+.logo-container {
+    padding: 0 2rem;
+}
+
+.logo-container img {
+    width: 12rem;
+    margin: 0.5rem 0 0 0;
+}
+
+.nav-links-container {
+    /* width: 100%; */
+    flex-grow: 1;
+    display: flex;
+}
+
+.nav-links-container ul {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-links-container ul li {
+    list-style: none;
+    margin: 3.5rem 2rem 0rem 2rem;
+}
+
+.nav-links-container ul li a:hover {
+    border-bottom: 2px solid #ffbc02;
+}
+
+.nav-links-container ul li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 0.5rem;
+    color: #ffffff;
+}
+
+.nav-menu {
+    padding: 0;
+}
+
+.search-bar {
+    margin-left: auto;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 0.8rem;
+}
+
+.search-bar button {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    background: #ffbc02;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #ffbc02;
+    border-left: none;
+    cursor: pointer;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+.search-bar button:hover {
+    background-color: #ffffff;
+    color: #ffbc02;
+
+}
+
+.search-bar input {
+    padding: 10px 15px;
+    font-size: 17px;
+    border: 1px solid #ffbc02;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    margin-right: 0.5rem;
+    border-radius: 25px;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar input::placeholder {
+    font-style: italic;
+}
+
+@media (max-width: 791px) {
+    .nav-links-container {
+        width: 18rem;
+        position: absolute;
+        left: 0;
+        z-index: 99;
+        height: 100vh;
+        background-color: #ffffff;
+        display: none;
+    }
+
+    .nav-links-container ul li a {
+        color: #161616;
+    }
+
+    .nav-links-container ul {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .logo-container {
+        padding: 0;
+    }
+
+    .logo-container img {
+        width: 9rem;
+        margin: 0.5rem 0 0 0;
+    }
+
+    .nav-links-container ul li {
+        list-style: none;
+        margin: 0;
+        padding: 0.8rem 2rem;
+
+    }
+
+    .menu {
+        width: 2rem;
+        height: 2rem;
+        margin: 1rem;
+        padding: 0.5rem;
+        flex-grow: 1;
+        cursor: pointer;
+    }
+
+    .menu i {
+        color: #ffffff;
+        font-size: large;
+    }
+
+    .nav-menu {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    .close-navs {
+        width: 2rem;
+        height: 2rem;
+        margin: 1rem;
+        padding: 0.5rem;
+        flex-grow: 1;
+        cursor: pointer;
+        display: none;
+    }
+
+    .close-navs i {
+        color: #ffffff;
+        font-size: large;
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .search-bar input {
+        margin-left: 1rem;
+    }
+
+}
+
+@media (min-width: 792px) {
+    .close-nav {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 900px) and (orientation:portrait) {
+    .logo-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
